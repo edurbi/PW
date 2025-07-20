@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduard Lloret Carbonell - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <div class="container">
+        <nav>
+            <ul class="navbar">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
             <h1>Eduard Lloret Carbonell</h1>
             <p>AI Researcher | Deep Learning | Computer Vision</p>
             <div class="contact">
@@ -21,7 +33,7 @@
     </header>
 
     <main>
-        <section id="about">
+        <section id="about" class="fade-in">
             <h2>About Me</h2>
             <p>
                 I am a graduate student in Artificial Intelligence at Shanghai Jiao Tong University, 
@@ -31,7 +43,7 @@
             </p>
         </section>
 
-        <section id="experience">
+        <section id="experience" class="fade-in">
             <h2>Work Experience</h2>
             <div class="job">
                 <h3>AI Researcher - Medical Transactional Lab, SJTU</h3>
@@ -61,7 +73,7 @@
             </div>
         </section>
 
-        <section id="education">
+        <section id="education" class="fade-in">
             <h2>Education</h2>
             <ul>
                 <li><strong>MSc in Artificial Intelligence</strong> - Shanghai Jiao Tong University (2022-2025)</li>
@@ -69,14 +81,14 @@
             </ul>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="fade-in">
             <h2>Skills</h2>
             <p><strong>Programming:</strong> Python, C/C++, JavaScript, HTML/CSS</p>
             <p><strong>Frameworks:</strong> PyTorch</p>
             <p><strong>Languages:</strong> English (C2), Spanish (Native), Catalan (Native), Chinese (HSK5/C1)</p>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="fade-in">
             <h2>Projects</h2>
             <ul>
                 <li>Development of multimodal AI models for medical image analysis.</li>
