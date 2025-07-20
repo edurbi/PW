@@ -19,11 +19,13 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><button id="toggle-mode">🌙</button></li>
             </ul>
         </nav>
+        <canvas id="bgCanvas"></canvas>
         <div class="hero">
             <h1>Eduard Lloret Carbonell</h1>
-            <p>AI Researcher | Deep Learning | Computer Vision</p>
+            <p id="typing"></p>
             <div class="contact">
                 <a href="mailto:edurbiu@gmail.com">edurbiu@gmail.com</a> | 
                 <span>+34 680 241 985</span> | 
@@ -45,7 +47,7 @@
 
         <section id="experience" class="fade-in">
             <h2>Work Experience</h2>
-            <div class="job">
+            <div class="job tilt-card">
                 <h3>AI Researcher - Medical Transactional Lab, SJTU</h3>
                 <span class="date">Sept 2022 - Mar 2025</span>
                 <p>
@@ -55,20 +57,12 @@
                     - Published first-author papers at MICCAI 2023, BIBM 2024, and GTC 2025.
                 </p>
             </div>
-            <div class="job">
+            <div class="job tilt-card">
                 <h3>Internship in AI Research - EPS Girona</h3>
                 <span class="date">Jun 2019 - Sept 2019</span>
                 <p>
                     - Developed computer vision algorithms for medical AI.<br>
                     - Researched segmentation techniques for medical images.
-                </p>
-            </div>
-            <div class="job">
-                <h3>Internship - Frigoríficos Costa Brava S.A.</h3>
-                <span class="date">Jun 2018 - Sept 2018</span>
-                <p>
-                    - Server management and data digitization.<br>
-                    - Data classification and tool development.
                 </p>
             </div>
         </section>
@@ -83,18 +77,27 @@
 
         <section id="skills" class="fade-in">
             <h2>Skills</h2>
-            <p><strong>Programming:</strong> Python, C/C++, JavaScript, HTML/CSS</p>
-            <p><strong>Frameworks:</strong> PyTorch</p>
-            <p><strong>Languages:</strong> English (C2), Spanish (Native), Catalan (Native), Chinese (HSK5/C1)</p>
+            <div class="skill-bar">
+                <span>Python</span>
+                <div class="bar"><div class="fill" data-width="90%"></div></div>
+            </div>
+            <div class="skill-bar">
+                <span>PyTorch</span>
+                <div class="bar"><div class="fill" data-width="85%"></div></div>
+            </div>
+            <div class="skill-bar">
+                <span>Computer Vision</span>
+                <div class="bar"><div class="fill" data-width="80%"></div></div>
+            </div>
         </section>
 
         <section id="projects" class="fade-in">
             <h2>Projects</h2>
-            <ul>
-                <li>Development of multimodal AI models for medical image analysis.</li>
-                <li>Transformer-based architecture for COVID-19 diagnosis using 2D and 3D images.</li>
-                <li>Dimension-agnostic AI models for multi-task data sparsity.</li>
-            </ul>
+            <div class="project-list">
+                <div class="project-card tilt-card">Multimodal AI models for medical image analysis.</div>
+                <div class="project-card tilt-card">Transformer-based COVID-19 diagnosis with 2D & 3D images.</div>
+                <div class="project-card tilt-card">Dimension-agnostic AI for multi-task data sparsity.</div>
+            </div>
         </section>
     </main>
 
